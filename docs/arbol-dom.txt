@@ -8,6 +8,9 @@ Document
     ├── head
     │   ├── meta [charset="UTF-8"]
     │   ├── meta [name="viewport" content="width=device-width, initial-scale=1.0"]
+    │   ├── meta [name="author" content="Jean Villegas"]
+    │   ├── meta [name="description" content="Sitio web sobre la evolución del HTML..."]
+    │   ├── meta [name="language" content="Spanish"]
     │   ├── title
     │   │   └── (texto: "La Evolución del HTML | Inicio")
     │   └── link [rel="stylesheet" href="css/estilo.css"]
@@ -70,4 +73,12 @@ Document
 
 ================================================================================
 Fin del árbol DOM - index.html
+================================================================================
+
+NOTA: La página contacto.html comparte la misma estructura (header, main, footer).
+Diferencias en el DOM de contacto.html:
+- head: además incluye <script src="js/contacto-db.js" defer></script>
+- main: contiene h1 "Contacto", p.contacto-intro, form.formulario-contenedor con
+  div.form-grupo (label + input#nombre), div.form-grupo (label + input#email),
+  div.form-grupo (label + textarea#mensaje), button.btn.btn-enviar "Enviar"
 ================================================================================

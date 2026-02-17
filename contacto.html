@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Realizado por: Jean Villegas - Página de contacto -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Jean Villegas">
@@ -8,6 +9,8 @@
   <meta name="language" content="Spanish">
   <title>Contacto | La Evolución del HTML</title>
   <link rel="stylesheet" href="css/estilo.css">
+  <!-- Base de datos local con IndexedDB (JavaScript) -->
+  <script src="js/contacto-db.js" defer></script>
 </head>
 <body>
   <header class="header">
@@ -28,10 +31,13 @@
 
   <main class="contenedor">
     <h1 class="seccion-titulo">Contacto</h1>
+    <!-- Texto introductorio de la sección de contacto -->
     <p class="contacto-intro">
       ¿Tienes preguntas sobre la evolución del HTML? Envíanos un mensaje.
     </p>
 
+    <!-- Formulario principal de contacto.
+         Los datos se guardan en una base de datos local del navegador usando IndexedDB. -->
     <form class="formulario-contenedor" action="#" method="post">
       <div class="form-grupo">
         <label for="nombre">Nombre *</label>

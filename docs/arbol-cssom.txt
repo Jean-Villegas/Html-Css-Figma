@@ -59,8 +59,8 @@ body                      → fuente, fondo, color base
 .formulario-contenedor
 .form-grupo
 .form-grupo label
-.form-grupo input, .form-grupo select, .form-grupo textarea
-.form-grupo input:focus, etc.
+.form-grupo input, .form-grupo textarea
+.form-grupo input:focus, .form-grupo textarea:focus
 .form-grupo textarea
 .btn-enviar
 .btn-enviar:hover
